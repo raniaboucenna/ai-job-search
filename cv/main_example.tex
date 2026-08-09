@@ -1,163 +1,140 @@
 %% Example CV - Rania Boucenna
-%% Comprehensive overview of all competencies, experience, and achievements.
-%% Use as a master reference when tailoring role-specific CVs.
+%% Built on the "modern-onepage" custom template (templates/cv/modern-onepage/).
+%% Comprehensive-but-condensed master reference - use as a source when tailoring
+%% role-specific CVs (cv/main_<company>_<role>.tex), which may draw on the
+%% fuller history in .claude/skills/job-application-assistant/01-candidate-profile.md.
 %%
-%% Compile with: lualatex main_example.tex
-%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+%% Compile with: lualatex -interaction=nonstopmode main_example.tex
+%% (requires fontspec -> lualatex or xelatex, not pdflatex)
 
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}
-\moderncvcolor{blue}
+\documentclass[10pt,a4paper]{article}
 
-% Force both first and last name AND section headings to render in moderncv
-% blue (color1). Default banking on lualatex+MiKTeX leaves these black, which
-% looks inconsistent with the rest of the blue accent scheme.
-\renewcommand*{\firstnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\lastnamestyle}[1]{{\fontsize{34}{36}\bfseries\upshape\color{color1}#1}}
-\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+\usepackage[margin=1.4cm,top=1.1cm,bottom=1.1cm]{geometry}
 
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Lato-Reg}[
+  Path = fonts/lato/,
+  Extension = .ttf,
+  BoldFont = Lato-Bol,
+  ItalicFont = Lato-RegIta,
+  BoldItalicFont = Lato-BolIta
+]
+\newfontfamily\latoblack{Lato-Bla}[Path = fonts/lato/, Extension = .ttf]
+
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1F5C6B}
+\definecolor{subtext}{HTML}{555555}
+\definecolor{rulecolor}{HTML}{CCCCCC}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=3.4cm, topsep=1pt, partopsep=0pt, itemsep=1pt, parsep=0pt, label=\textbullet, font=\color{subtext}}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[{\color{rulecolor}\titlerule[0.6pt]}]
+\titlespacing{\section}{0pt}{7pt}{3pt}
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=blue,
+    urlcolor=accent,
+    linkcolor=accent,
     pdftitle={Rania Boucenna - CV},
-    pdfpagemode=FullScreen,
+    pdfpagemode=UseNone,
 }
-\usepackage[scale=0.80]{geometry}
-\usepackage{import}
 
-% personal data
-\name{Rania}{Boucenna}
-\address{Rouen, France}{}{}
-\phone[mobile]{+33 7 59 08 89 32}
-\email{raniaboucenna3@gmail.com}
-\extrainfo{\href{https://www.linkedin.com/in/raniaboucenna}{LinkedIn}}
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+\newcommand{\datebox}[1]{\makebox[3.3cm][l]{\small\color{accent}\textbf{#1}}}
+
+\newcommand{\cventry}[4]{%
+\noindent\datebox{#1}\textbf{#2}\\
+\hspace*{3.3cm}{\small\color{subtext}\textit{#3} -- #4}\\[-8pt]}
+
+\newcommand{\eduentry}[3]{%
+\noindent\datebox{#1}\textbf{#2}\\
+\hspace*{3.3cm}{\small\color{subtext}#3}\\[3pt]}
 
 \begin{document}
 
-\makecvtitle
+% ============================================================
+%     HEADER
+% ============================================================
+{\latoblack\fontsize{26}{28}\selectfont\color{accent}Rania Boucenna}\\[1pt]
+{\small\color{subtext}Ingénieure Génie des Procédés -- Valorisation de la Biomasse \& Matériaux Biosourcés}\\[3pt]
+{\small Rouen, France \;\textbullet\; +33 7 59 08 89 32 \;\textbullet\; \href{mailto:raniaboucenna3@gmail.com}{raniaboucenna3@gmail.com} \;\textbullet\; \href{https://www.linkedin.com/in/raniaboucenna}{LinkedIn}}
+
+\vspace{2pt}
 
 % ============================================================
-%     PROFILE STATEMENT
+%     PROFILE
 % ============================================================
-
-\vspace{6pt}
-\small{Ingénieure en génie des procédés (École Nationale Polytechnique de Constantine), actuellement en Master 2 Procédés Innovants et Développement Durable à l'Université Sorbonne Paris-Nord. Expérience en R\&D sur les matériaux biosourcés, la caractérisation physico-chimique et l'analyse de données sous Python, ainsi qu'en génie des procédés industriels (raffinage, traitement des eaux, pharma). Méthodique et autonome, je vise à optimiser l'efficacité des procédés et à concevoir des solutions innovantes et écoresponsables.}
+\section*{Profil}
+{\small Ingénieure en génie des procédés (ENPC), actuellement en Master 2 Procédés Innovants et Développement Durable (Université Sorbonne Paris-Nord). Expérience en R\&D sur les matériaux biosourcés et la caractérisation physico-chimique, ainsi qu'en génie des procédés industriels (raffinage, eau, pharma). Méthodique et autonome, je vise à concevoir des procédés innovants et écoresponsables.}
 
 % ============================================================
 %     CORE COMPETENCIES
 % ============================================================
-
-\section{Compétences Clés}
-\vspace{1pt}
-\begin{itemize}
-
-\item \textbf{Génie des procédés}: Bilans matière et énergie, dimensionnement et optimisation des procédés, chimie des réacteurs
-
-\item \textbf{Valorisation de la biomasse \& matériaux biosourcés}: Élaboration et caractérisation de matériaux biosourcés (béton biosourcé, bio-patchs)
-
-\item \textbf{Caractérisation physico-chimique}: GCMS, UV-visible, FTIR, granulométrie laser
-
-\item \textbf{Outils de simulation \& données}: Aspen HYSYS, Python, Matlab, Fluent
-
-\item \textbf{Développement durable \& QHSE}: Économie circulaire, démarche QHSE
-
-\end{itemize}
+\section*{Compétences Clés}
+{\small
+\textbf{Génie des procédés}: bilans matière/énergie, dimensionnement, optimisation \quad\textbullet\quad \textbf{Matériaux biosourcés}: formulation, caractérisation\\
+\textbf{Outils}: Aspen HYSYS, Python, Matlab, Fluent \quad\textbullet\quad \textbf{Développement durable}: économie circulaire, QHSE
+}
 
 % ============================================================
 %     PROFESSIONAL EXPERIENCE
 % ============================================================
+\section*{Expérience Professionnelle}
 
-\section{Expérience Professionnelle}
-\vspace{3pt}
+\cventry{Avr 2026-Présent}{Ingénieure en développement durable (stage de fin d'études)}{Laboratoire Eclore, UniLaSalle Rouen}{Rouen, France}
 \begin{itemize}
+\item {\small Mise au point d'un béton biosourcé destiné à l'isolation thermique}
+\item {\small Caractérisation physico-chimique, mécanique et hygroscopique des matériaux élaborés}
+\end{itemize}
+\vspace{2pt}
 
-% --- Most Recent Role ---
-\item{\cventry{2026-Présent}{Ingénieure en développement durable (stage de fin d'études)}{Laboratoire Eclore, UniLaSalle Rouen}{Rouen, France}{}{\vspace{1pt}
+\cventry{Jan 2023-Jul 2023}{Ingénieure R\&D - Projet de Fin d'Études}{École Nationale Polytechnique de Constantine}{Constantine, Algérie}
 \begin{itemize}
-    \item Mise au point d'un béton biosourcé destiné à l'isolation thermique
-    \item Fabrication de matériaux isolants biosourcés
-    \item Caractérisation physico-chimique, mécanique et hygroscopique des matériaux élaborés
-\end{itemize}}}
+\item {\small Gélation ionotropique d'huiles essentielles pour des bio-patchs de cicatrisation ; caractérisation (GCMS, UV-visible, FTIR, granulométrie laser)}
+\item {\small Modélisation de la cinétique de libération et optimisation de la formulation -- Mention Très Bien}
+\end{itemize}
+\vspace{2pt}
 
-\vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{Jan 2023 - Jul 2023}{Ingénieure R\&D - Projet de Fin d'Études}{École Nationale Polytechnique de Constantine}{Constantine, Algérie}{}{\vspace{1pt}
+\cventry{Jul 2022-Aug 2022}{Ingénieure process}{Sonatrach, Raffinerie de Skikda}{Skikda, Algérie}
 \begin{itemize}
-    \item Recherche sur la gélation ionotropique des huiles essentielles pour concevoir des bio-patchs de cicatrisation
-    \item Encapsulation ionotropique par pompe à seringue programmable ; caractérisation (GCMS, UV-visible, FTIR, granulométrie laser)
-    \item Modélisation mathématique de la cinétique de libération et optimisation des paramètres de formulation
-    \item Mention Très Bien
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{Jul 2022 - Aug 2022}{Ingénieure process}{Sonatrach, Raffinerie de Skikda}{Skikda, Algérie}{}{\vspace{1pt}
-\begin{itemize}
-    \item Acquisition du savoir-faire sur les étapes du raffinage du pétrole brut (dessalage, distillation, traitement des produits finis)
-\end{itemize}}}
-
+\item {\small Raffinage du pétrole brut: dessalage, distillation, traitement des produits finis}
 \end{itemize}
 
 % ============================================================
 %     EDUCATION
 % ============================================================
+\section*{Formation}
 
-\section{Formation}
-\vspace{1pt}
-\begin{itemize}
-
-\item{\cventry{2025-2026}{Master 2, Procédés Innovants et Développement Durable}{Université Sorbonne Paris-Nord (Institut Galilée)}{Île-de-France, France}{}{\vspace{1pt}
-En cours, soutenance prévue septembre 2026. Simulation des procédés, développement durable, QHSE.
-}}
-
-\vspace{3pt}
-
-\item{\cventry{2020-2023}{Diplôme d'Ingénieure, Génie des Procédés}{École Nationale Polytechnique de Constantine (ENPC)}{Constantine, Algérie}{}{\vspace{1pt}
-Thèse (PFE): ``Gélation ionotropique des huiles essentielles pour la conception de bio-patchs de cicatrisation des plaies.'' Mention Très Bien.
-}}
-
-\end{itemize}
+\eduentry{2025-2026}{Master 2, Procédés Innovants et Développement Durable}{Université Sorbonne Paris-Nord (Institut Galilée) -- en cours, soutenance sept. 2026}
+\eduentry{2020-2023}{Diplôme d'Ingénieure, Génie des Procédés}{ENPC, Constantine, Algérie -- Mention Très Bien (PFE)}
 
 % ============================================================
 %     LANGUAGES
 % ============================================================
-
-\section{Langues}
-\vspace{1pt}
-\begin{itemize}
-\item Français (native), Arabe (native), Anglais (C1), Allemand (débutant).
-\end{itemize}
+\section*{Langues}
+{\small Français (natif) \quad\textbullet\quad Arabe (natif) \quad\textbullet\quad Anglais (C1) \quad\textbullet\quad Allemand (débutant)}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     DISTINCTIONS
 % ============================================================
-
-% None yet - section omitted from the master CV until a publication exists.
+\section*{Distinctions}
+{\small Mention Très Bien -- Projet de Fin d'Études, École Nationale Polytechnique de Constantine (2023)}
 
 % ============================================================
-%     HONORS AND AWARDS (optional)
+%     CERTIFICATIONS
 % ============================================================
-
-\section{Distinctions}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{Mention Très Bien} -- Projet de Fin d'Études, École Nationale Polytechnique de Constantine (2023).}
-\end{itemize}
+\section*{Certifications}
+{\small Maîtriser les concepts de la durabilité \quad\textbullet\quad Les fondements de l'économie circulaire \quad\textbullet\quad Utiliser l'IA pour le développement durable \quad\textbullet\quad Acquérir des compétences vertes (LinkedIn Learning)}
 
 % ============================================================
 %     REFERENCES
 % ============================================================
-
-\section{Références}
-\vspace{1pt}
-\begin{itemize}
-\item{Disponibles sur demande.}
-\end{itemize}
+\section*{Références}
+{\small Disponibles sur demande.}
 
 \end{document}

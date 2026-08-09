@@ -4,6 +4,20 @@ framework_version: 1.4.0
 
 # CV Templates and Tailoring Guide
 
+<!-- BEGIN ACTIVE-TEMPLATE (managed by /add-template - do not edit by hand) -->
+> **Active template override: `modern-onepage`**
+>
+> A custom template is active. Where this block conflicts with the stock guidance below, this block wins. Structural advice below (tailoring, page-budget, cutting rules) still applies except where the template's own Page Budget (in its `TEMPLATE.md`) is stricter.
+>
+> - **Template skeleton:** `templates/cv/modern-onepage/template.tex` — use this as the structural reference instead of the stock moderncv template
+> - **Manifest:** `templates/cv/modern-onepage/TEMPLATE.md` — read this for style rules and known pitfalls before drafting (in particular the `\cventry`/`\eduentry` line-break-skip pitfall - it is easy to get backwards)
+> - **Source extension:** `.tex` (LaTeX, but not moderncv - a plain `article`-based layout)
+> - **Compile command:** `lualatex -interaction=nonstopmode <file>.tex` (same engine as stock, but note this template is NOT moderncv - do not mix `\cventry` signatures between the two)
+> - **Fonts:** Lato, bundled in `templates/cv/modern-onepage/fonts/lato/` (Lato-Reg/Bol/RegIta/BolIta for body, Lato-Bla for the name header) - copy the `fonts/` folder into the output directory alongside the compiled `.tex`, or reference it by relative path
+> - **Page limit:** exactly 1 page - this is stricter than the stock 2-page rule; see the template's `TEMPLATE.md` Page Budget table for per-section limits (max 3 roles shown, 1-2 bullets each)
+> - **Output file:** `cv/main_<company>_<role>.tex`; copy `fonts/lato/` into `cv/` (or keep the relative `Path = fonts/lato/` working by placing compiled output inside the template folder) so `\setmainfont`/`\newfontfamily` resolve
+<!-- END ACTIVE-TEMPLATE -->
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)
