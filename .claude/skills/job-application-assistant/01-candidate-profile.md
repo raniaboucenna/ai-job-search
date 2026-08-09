@@ -32,6 +32,7 @@ a hard no, not a gap to smooth over. -->
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
 | Master 2, Génie des Procédés Innovants et Développement Durable (in progress, soutenance Sept 2026) | Sept 2025 - Sept 2026 | Université Sorbonne Paris-Nord (Institut Galilée) | Simulation des procédés, développement durable, QHSE |
+| Attestation - Assistante en pharmacie / assistante médicale / assistante de laboratoire | Déc 2023 - Mars 2024 | Aspire Up Academy For Training & Consulting | Sciences / recherche clinique / laboratoire médical et professions paramédicales |
 | Diplôme d'Ingénieure, Génie des Procédés | Déc 2020 - Juil 2023 | École Nationale Polytechnique de Constantine (ENPC), Algérie | Gélation ionotropique, encapsulation, caractérisation physico-chimique, modélisation cinétique - PFE mention Très Bien |
 | Classes préparatoires aux grandes écoles | 2018 - 2020 | École Nationale Polytechnique de Constantine (ENPC), Algérie | Mathématiques, physique, chimie |
 
@@ -51,11 +52,14 @@ Constantine, Algérie
 - Modélisation mathématique de la cinétique de libération ; optimisation des paramètres de formulation
 - Étude des activités biologiques (antioxydantes, antimicrobiennes) des microsphères
 - Analyse et traitement des données expérimentales avec Python et Excel
+- Maîtrise des bonnes pratiques de laboratoire (BPL)
+- Formations startups et brevets dans le cadre de projets innovants
 - **Mention Très Bien**
 
-### Ingénieure qualité - Algérienne Des Eaux (Mars 2023 - Avril 2023)
+### Ingénieure qualité chargée du traitement des eaux - Algérienne Des Eaux (Mars 2023 - Avril 2023)
 Annaba, Algérie
-- Analyse de l'eau selon des méthodes physico-chimiques adaptées afin d'en assurer la qualité
+- Analyses physico-chimiques de l'eau potable et gestion du risque de contamination de l'eau
+- Étude bibliographique sur le procédé de contrôle qualité de l'eau potable
 
 ### Stagiaire - Complexe sidérurgique d'El Hadjar (Déc 2022 - Janv 2023)
 El Hadjar, Annaba, Algérie
@@ -63,15 +67,21 @@ El Hadjar, Annaba, Algérie
 
 ### Ingénieure process - Sonatrach, Division Raffinage, Raffinerie de Skikda (Juil 2022 - Août 2022)
 Skikda, Algérie
-- Acquisition du savoir-faire nécessaire sur les étapes du raffinage du pétrole brut, du dessalage et de la distillation jusqu'au traitement des produits finis
+- Analyse des politiques QHSE pour identifier les forces et les faiblesses et proposer des améliorations
+- Simulation et modélisation sous Aspen HYSYS pour élaborer les schémas de procédés
+- Maîtrise des étapes de traitement du pétrole brut : séparation, dessalage, stabilisation
 
 ### Ingénieure laboratoire - Groupe Saidal SPA (Mars 2022 - Avril 2022)
 El Harrach, Alger, Algérie
 - Contrôle qualité des médicaments
+- Application des bonnes pratiques de laboratoire (BPL)
+- Analyse de données expérimentales et reporting
 
 ### Ingénieure production - Laboratoires Biogalenic (Juil 2021 - Août 2021)
 Constantine, Algérie
 - Contribution à la fabrication de médicaments sous formes sèches (B1, B6, comprimés de paracétamol)
+- Suivi des opérations pharmaceutiques : granulation, compression, pelliculage
+- Maîtrise des bonnes pratiques de fabrication (BPF)
 
 ## Independent Projects
 <!-- Projects outside of employment: freelance, open source, personal -->
@@ -92,11 +102,13 @@ Constantine, Algérie
 ### Domain Expertise
 - Génie des procédés, valorisation de la biomasse, matériaux biosourcés
 - Bilans matière et énergie, chimie des réacteurs, dimensionnement et optimisation des procédés
+- Modélisation et simulation des procédés (Aspen HYSYS, modélisation cinétique)
 - Caractérisation physico-chimique (GCMS, UV-visible, FTIR, granulométrie laser)
 - Développement durable, économie circulaire, QHSE
 
 ### Software & Tools
 - Pack Office (Excel, PowerPoint, Word), Google Workspace
+- Animation audiovisuelle *(listed as a top skill on LinkedIn; low relevance to process-engineering roles - include only where a posting asks for communication/outreach work)*
 
 ## Publications
 <!-- List peer-reviewed publications, if any -->

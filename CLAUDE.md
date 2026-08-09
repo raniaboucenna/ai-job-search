@@ -33,6 +33,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Education
 - **Master 2, Génie des Procédés Innovants et Développement Durable** (Sept 2025 - Sept 2026, in progress, soutenance prévue septembre 2026) - Université Sorbonne Paris-Nord (Institut Galilée)
   - Topics: Simulation des procédés, développement durable, QHSE
+- **Attestation - Assistante en pharmacie / assistante médicale / assistante de laboratoire** (Déc 2023 - Mars 2024) - Aspire Up Academy For Training & Consulting
 - **Diplôme d'Ingénieure, Génie des Procédés** (Déc 2020 - Juil 2023) - École Nationale Polytechnique de Constantine (ENPC), Algérie
   - Thèse (PFE): "Gélation ionotropique des huiles essentielles pour la conception de bio-patchs de cicatrisation des plaies" - Mention Très Bien
   - Topics: Encapsulation ionotropique, caractérisation (GCMS, UV-visible, FTIR, granulométrie laser), modélisation cinétique, optimisation de formulation
@@ -49,23 +50,28 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Encapsulation ionotropique par pompe à seringue programmable ; caractérisation via GCMS, UV-visible, FTIR, granulométrie laser
   - Modélisation mathématique de la cinétique de libération et optimisation des paramètres de formulation - Mention Très Bien
 
-- **Ingénieure qualité** (Mars 2023 - Avril 2023) - **Algérienne Des Eaux** (Annaba, Algérie)
-  - Analyse de l'eau selon des méthodes physico-chimiques pour assurer la qualité
+- **Ingénieure qualité chargée du traitement des eaux** (Mars 2023 - Avril 2023) - **Algérienne Des Eaux** (Annaba, Algérie)
+  - Analyses physico-chimiques de l'eau potable et gestion du risque de contamination
+  - Étude bibliographique sur le procédé de contrôle qualité de l'eau potable
 
 - **Stagiaire** (Déc 2022 - Janv 2023) - **Complexe sidérurgique d'El Hadjar** (El Hadjar, Annaba, Algérie)
   - Familiarisation avec les méthodes de contrôle des métaux et les tests associés
 
 - **Ingénieure process** (Juil 2022 - Août 2022) - **Sonatrach, Raffinerie de Skikda** (Skikda, Algérie)
-  - Acquisition du savoir-faire sur les étapes du raffinage du pétrole brut (dessalage, distillation, traitement des produits finis)
+  - Analyse des politiques QHSE pour identifier forces et faiblesses et proposer des améliorations
+  - Simulation et modélisation sous Aspen HYSYS pour élaborer les schémas de procédés
+  - Maîtrise des étapes de traitement du pétrole brut : séparation, dessalage, stabilisation
 
 - **Ingénieure laboratoire** (Mars 2022 - Avril 2022) - **Groupe Saidal** (El Harrach, Alger, Algérie)
-  - Contrôle qualité des médicaments
+  - Contrôle qualité des médicaments ; application des bonnes pratiques de laboratoire (BPL)
+  - Analyse de données expérimentales et reporting
 
 - **Ingénieure production** (Juil 2021 - Août 2021) - **Laboratoires Biogalenic** (Constantine, Algérie)
   - Contribution à la fabrication de médicaments sous formes sèches (B1, B6, comprimés de paracétamol)
+  - Suivi des opérations pharmaceutiques : granulation, compression, pelliculage ; bonnes pratiques de fabrication (BPF)
 
 ### Technical Skills
-- **Primary:** Génie des procédés, valorisation de la biomasse, matériaux biosourcés, bilans matière et énergie, dimensionnement et optimisation des procédés, caractérisation physico-chimique
+- **Primary:** Génie des procédés, valorisation de la biomasse, matériaux biosourcés, bilans matière et énergie, dimensionnement et optimisation des procédés, modélisation et simulation des procédés, caractérisation physico-chimique
 - **Secondary:** Python (traitement et analyse de données), Aspen HYSYS, Matlab, Fluent
 - **Domain:** Développement durable, économie circulaire, QHSE, chimie des réacteurs
 - **Software:** Aspen HYSYS, Python, Matlab, Fluent, ImageJ, Minitab, Pack Office (Excel, PowerPoint, Word), Google Workspace

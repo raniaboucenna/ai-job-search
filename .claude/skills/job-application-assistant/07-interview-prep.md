@@ -46,6 +46,18 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### Analyse des politiques QHSE et modélisation Aspen HYSYS (Sonatrach, Raffinerie de Skikda)
+**Source:** CV - Ingénieure process, Sonatrach, Juil 2022 - Août 2022
+**What happened:** Analysed the refinery's QHSE policies to identify strengths and weaknesses and propose improvements, and built process flow schemes via Aspen HYSYS simulation.
+**Why it matters:** This is the **only** role in the whole history that evidences hands-on Aspen HYSYS use, so it is the answer to "where have you actually used HYSYS?" - a question that otherwise has no good answer. It also demonstrates a critique-and-recommend task (assessing existing practice and proposing change), which none of the four completed STAR examples above cover: those are all execution-of-own-project stories.
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

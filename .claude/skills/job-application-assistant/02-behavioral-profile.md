@@ -24,6 +24,7 @@ Rania Boucenna's behavioral profile identifies her as an **Autonomous, Methodica
 - **Technical problem-solving:** Comfortable designing experimental plans, running characterizations, and iterating on formulations/processes (e.g., PFE work on ionotropic gelation and kinetic modeling, current biosourced concrete work)
 - **Self-directed execution:** Repeatedly stepped into short internships (2 months each) across unfamiliar industrial settings and became operational quickly
 - **Technical communication:** Report writing is a self-identified core competency; comfortable documenting and explaining technical work
+- **Esprit d'innovation:** Self-identified drive toward innovative rather than incremental solutions, consistent with her stated interest in eco-designed processes and the "transition bas carbone" framing she uses herself *[Inferred from CV savoir-être section - review before relying on this]*
 
 ## How You Work Best
 - Given ownership over how to organize tasks and time, rather than closely supervised on a fixed schedule
