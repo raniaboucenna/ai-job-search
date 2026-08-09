@@ -116,11 +116,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For R&D / matériaux biosourcés (thèse, recherche) roles:**
+> Ingénieure en génie des procédés (ENPC) actuellement en Master 2 Procédés Innovants et Développement Durable (Université Sorbonne Paris-Nord), je me spécialise dans la valorisation de la biomasse et l'élaboration de matériaux biosourcés. Mon stage de fin d'études au Laboratoire Eclore (UniLaSalle Rouen) porte sur la mise au point d'un béton biosourcé pour l'isolation thermique, avec caractérisation physico-chimique, mécanique et hygroscopique complète. Mon projet de fin d'études d'ingénieure, mené avec la mention très bien, portait sur la gélation ionotropique d'huiles essentielles et la modélisation de la cinétique de libération. Méthodique et autonome, je cherche à approfondir ces travaux dans le cadre d'une thèse doctorale sur les procédés de valorisation des biomasses.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For génie des procédés / alternance roles:**
+> Ingénieure en génie des procédés diplômée de l'École Nationale Polytechnique de Constantine, complétant un Master 2 en Procédés Innovants et Développement Durable à l'Université Sorbonne Paris-Nord. Mon parcours combine une expérience variée en industrie de procédés (raffinage pétrochimique chez Sonatrach, contrôle qualité en traitement des eaux et en pharmaceutique) et en R&D sur les matériaux biosourcés. Maîtrisant Aspen HYSYS, Python et les méthodes de caractérisation physico-chimique, je recherche une alternance en génie des procédés pour mettre ces compétences au service de projets industriels concrets.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

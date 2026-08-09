@@ -1,81 +1,81 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos ship disabled (not relevant to Rania's France/Canada search) and any skill added with `/add-portal` is included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
 
 The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
+**Language scope:** queries below are written in French (primary market and CV language) and English (useful for international/Canadian PhD postings and English-language R&D roles). Arabic and German are declared languages but are not used for query generation - the target job markets (France, Canada) don't run on those languages. See `04-job-evaluation.md`'s Language Gate for how declared languages affect scoring, independent of search-query language.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (France - scaffold with `/add-portal`):
+- **apec.fr** - APEC (Association Pour l'Emploi des Cadres), primary board for ingénieur/cadre-level roles in France
+- **linkedin.com/jobs** - LinkedIn job listings (filter: France / Rouen, Lille, Île-de-France); also covered by `linkedin-search` CLI
+- **jobs.abg.asso.fr** - ABG (Association Bernard Gregory), the reference board for PhD/doctoral positions in France
+- **indeed.fr** - broad secondary board for France
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Direct Google searches with `site:` filters for known target companies (UniLaSalle, INRAE, IFPEN, etc.)
+- For Canada: university doctoral-position listing pages (e.g. `site:*.ca "doctorat" OR "PhD" biosourced materials`)
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+### Priority 1: Thèse / Doctorat - Matériaux Biosourcés & Valorisation de la Biomasse
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+Rania's primary and most desired career direction: a PhD in biosourced materials or biomass valorization, in France or Canada.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
+site:jobs.abg.asso.fr "matériaux biosourcés" OR "biomasse"
+site:jobs.abg.asso.fr "thèse" "procédés" biosourcé
+"contrat doctoral" biomasse OR "matériaux biosourcés" France
+"PhD" "biosourced materials" OR "biomass valorization" Canada
+site:linkedin.com/jobs "doctorat" OR "PhD" biosourced OR biomasse
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Alternance - Ingénieur Génie des Procédés
 
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+Rania's fallback direction: an alternance to continue professionalizing in process engineering while funding her studies.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:apec.fr "alternance" "ingénieur génie des procédés" Normandie OR Lille OR "Île-de-France"
+site:indeed.fr "alternance ingénieur procédés" Rouen OR Lille OR Paris
+site:linkedin.com/jobs "alternance" "génie des procédés" France
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: Ingénieur R&D Matériaux / Procédés Développement Durable
 
-Wider net for general technical roles.
+Adjacent roles - non-alternance, non-thèse positions that still match her R&D/sustainability profile, in case a direct hire opportunity fits.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:apec.fr "ingénieur R&D" "matériaux biosourcés" OR "développement durable"
+site:apec.fr "ingénieur procédés" "développement durable" France
+site:linkedin.com/jobs "process engineer" sustainability OR "biosourced materials" France
+```
+
+### Priority 4: Broader Génie des Procédés / QHSE
+
+Wider net across general process-engineering and QHSE roles in France.
+
+```
+site:apec.fr "ingénieur génie des procédés" France
+site:indeed.fr "ingénieur procédés" OR "ingénieur QHSE" France
+site:linkedin.com/jobs "process engineer" OR "QHSE engineer" France
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+When evaluating results, verify the job location is within Rania's accepted range:
+- **Rouen and Normandie** - ideal, home base
+- **Lille métropole** - acceptable, priority region
+- **Île-de-France / Paris** - acceptable, priority region
+- **Rest of France** - accepted (candidate is mobile across all of France)
+- **Canada** - accepted, but **PhD/doctoral opportunities only** - requires visa/permit sponsorship, see `04-job-evaluation.md`'s Eligibility Gate
 
 ## Language Filter
 
-Your working languages and levels are in CLAUDE.md's Languages table. When filtering scraped results, apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language you haven't declared at all is excluded; a posting requiring a higher level than you declared in a language you do work in is not excluded, flag it clearly instead (see `job-scraper/SKILL.md`'s Step 3 "Quick Fit Assessment" for how the flag surfaces in `/scrape` output). Postings simply *written* in a language you don't work in, that don't require it on the job, are fine.
+Rania's working languages and levels are in CLAUDE.md's Languages table (French/Arabic native, English C1, German elementary). When filtering scraped results, apply `04-job-evaluation.md`'s Language Gate: a posting requiring a language she hasn't declared at all is excluded (e.g. German above elementary level); a posting requiring a higher level than declared in a language she does work in is not excluded, flag it clearly instead (see `job-scraper/SKILL.md`'s Step 3 "Quick Fit Assessment" for how the flag surfaces in `/scrape` output). Postings simply *written* in a language she doesn't work in, that don't require it on the job, are fine.
 
 ## Date Filter
 
@@ -84,4 +84,5 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape thèse" -> Priority 1 category queries + custom queries naming specific labs/universities
+- "/scrape alternance" -> Priority 2 category queries + custom queries for named target companies

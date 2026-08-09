@@ -14,28 +14,35 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- These are populated by /setup from your actual experience. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Bio-patchs de cicatrisation par gélation ionotropique (Projet de Fin d'Études, ENPC)
+**S:** Le laboratoire de l'ENPC cherchait à développer un bio-patch de cicatrisation à partir d'huiles essentielles, sans méthode d'encapsulation stabilisée ni caractérisation complète du relargage.
+**T:** Concevoir et optimiser un procédé de gélation ionotropique pour encapsuler les huiles essentielles et étudier leur cinétique de libération.
+**A:** J'ai mis en place un protocole d'encapsulation par pompe à seringue programmable, caractérisé les huiles et microsphères obtenues (GCMS, UV-visible, FTIR, granulométrie laser), modélisé mathématiquement la cinétique de libération, et optimisé les paramètres de formulation. J'ai aussi analysé et traité les données expérimentales avec Python et Excel.
+**R:** Le projet a été validé avec la **mention très bien**, débouchant sur une méthode de formulation reproductible et documentée.
+**Use for:** "Décrivez un projet technique que vous avez mené", "Parlez-moi d'un problème complexe que vous avez résolu"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Béton biosourcé pour l'isolation thermique (stage de fin d'études, UniLaSalle Rouen)
+**S:** Le Laboratoire Eclore d'UniLaSalle Rouen souhaitait développer un béton biosourcé pour l'isolation thermique, nécessitant une caractérisation complète des propriétés du matériau.
+**T:** Mettre au point la formulation, fabriquer les matériaux isolants, puis évaluer leurs performances physico-chimiques, mécaniques et hygroscopiques.
+**A:** J'ai conduit la formulation du béton biosourcé, fabriqué les échantillons, puis mené les caractérisations physico-chimiques, mécaniques et hygroscopiques nécessaires pour évaluer les performances du matériau.
+**R:** Stage en cours (avril 2026 - présent, soutenance septembre 2026) - à compléter avec les résultats finaux de caractérisation une fois le stage terminé.
+**Use for:** "Parlez-moi de votre projet le plus récent", "Comment évaluez-vous un nouveau matériau/procédé ?"
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Six stages courts dans six secteurs industriels différents (2021-2023)
+**S:** Entre 2021 et 2023, dans le cadre de ma formation d'ingénieure à l'ENPC, j'ai enchaîné six stages de courte durée (2 mois chacun) dans des secteurs très différents : pharmaceutique (Biogalenic), contrôle qualité pharma (Saidal), pétrochimie (Sonatrach), sidérurgie (Complexe d'El Hadjar), traitement des eaux (Algérienne Des Eaux).
+**T:** M'intégrer rapidement dans chaque nouvel environnement industriel et être opérationnelle malgré la durée limitée de chaque stage.
+**A:** À chaque stage, j'ai priorisé la compréhension rapide des procédés et normes spécifiques au site (étapes de raffinage chez Sonatrach, contrôle qualité pharmaceutique chez Saidal, analyse physico-chimique de l'eau chez l'Algérienne Des Eaux), en m'appuyant sur mes bases de génie des procédés pour monter en compétence vite.
+**R:** J'ai contribué de façon concrète à chacune des missions confiées malgré des durées courtes, et j'ai acquis une compréhension transversale de plusieurs industries de procédés.
+**Use for:** "Comment vous adaptez-vous à un nouvel environnement ?", "Parlez-moi d'une fois où vous avez dû apprendre vite"
+
+### 4. Autonomie dans la conduite du Projet de Fin d'Études
+**S:** Pendant mon PFE à l'ENPC, mon encadrant me laissait une large autonomie pour organiser mon plan d'expérience sur plusieurs mois.
+**T:** Structurer moi-même la progression du projet (recherche bibliographique, essais, caractérisation, modélisation) pour respecter l'échéance finale sans supervision quotidienne.
+**A:** J'ai établi un plan d'expérience détaillé, priorisé les essais selon les résultats intermédiaires, et ajusté mon calendrier de façon autonome tout en tenant mon encadrant informé aux étapes clés.
+**R:** Le projet a été mené à terme dans les délais avec la mention très bien, démontrant ma capacité à travailler efficacement en autonomie.
+**Use for:** "Comment organisez-vous votre propre travail ?", "Parlez-moi d'une fois où vous avez travaillé en autonomie"
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 

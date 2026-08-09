@@ -4,8 +4,6 @@ framework_version: 1.2.2
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Eligibility Gate — run before scoring
 
 If the candidate is not a citizen or permanent resident of the country they are applying in, run this first. It is a hard filter, not a scoring dimension, and it is separate from work-permit *timing*: timing asks "can they work the required hours yet?", eligibility asks "are they permitted to hold this job at all?". A candidate can pass timing and still be categorically excluded.
@@ -30,6 +28,12 @@ If the candidate's permit also constrains *hours* or *start date* (a student vis
 
 A role that fails this gate is not scored and not drafted. Everything below applies only to roles that pass it.
 
+### Candidate Eligibility Notes (set by /setup)
+- **Nationality:** Algerian.
+- **Current permit (France):** Student residence permit ("titre de séjour étudiant"). Can request a **changement de statut** to a salarié permit upon hire — a standard, well-understood process for Master's-level graduates in France. Do **not** auto-FAIL a French posting just because it doesn't mention sponsorship; the FAIL condition above (explicit citizenship/PR requirement) still applies as written, but ordinary "must be authorized to work in France" language should **PASS**, with a note to the candidate to plan the changement de statut timeline around the offer's start date.
+- **Doctoral contracts in France** ("contrat doctoral"): generally compatible with renewing her residence permit as a doctoral student. Not a blocker.
+- **Canada (PhD / doctoral opportunities):** Candidate has **no existing status** in Canada and would need visa/study-or-work-permit sponsorship. Apply the general Eligibility Gate as written: postings silent on sponsorship = PROCEED but unverified (check the university/employer's international-candidate policy); postings explicitly requiring Canadian citizenship/PR = FAIL; postings that explicitly welcome or sponsor international doctoral candidates = PASS.
+
 ## Language Gate — run before scoring
 
 No dimension or gate anywhere in this framework currently checks a posting's language requirements against what the candidate actually speaks - it is not one of the five Scoring Dimensions below, not a field `/scrape` or `/rank` track, and not something `/apply`'s language detection (Step 1, which already extracts a posting's required language generically) has anywhere to report to. This gate adds that check, structured the same way as the Eligibility Gate above: read the posting, classify against profile data, and treat a hard mismatch as FAIL before scoring.
@@ -44,7 +48,7 @@ Read the posting's language requirements as stated for **the role itself** — n
 
 Judge the level comparison the same way you judge everything else in this framework: read both sides as written and reason about it, don't force either into a rigid scale — CEFR letters, LinkedIn-style buckets ("professional working proficiency"), and plain-English words ("conversational," "fluent," "native") all appear in the wild and don't map onto each other precisely. When genuinely unsure whether a stated bar exceeds the candidate's level, prefer FLAG over a silent PASS — the human is meant to be the tiebreaker, not the gate.
 
-**Worked example:** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
+**Worked example for Rania:** a posting requiring "German B2/C1" → **FAIL/FLAG-worthy per her table** — her declared German level is Elementary, well below B2, so treat as FAIL unless the posting is silent on level. A posting requiring "fluent English" or "English C1" → **PASS**, matches her declared C1. A posting requiring "professional Arabic" → **PASS**, native/bilingual.
 
 ## Scoring Dimensions
 
@@ -60,9 +64,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Génie des procédés, valorisation de la biomasse, matériaux biosourcés, caractérisation physico-chimique, bilans matière/énergie, dimensionnement de procédés, Python (traitement de données), Aspen HYSYS
+**Moderate match areas:** Matlab, Fluent, QHSE, économie circulaire, techniques de laboratoire (GCMS, FTIR, UV-visible, granulométrie laser)
+**Weak match areas:** Pilotage de grands projets industriels à l'échelle production/usine (expérience limitée à des stages courts), gestion d'équipe
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -74,9 +78,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Stages R&D en laboratoire (matériaux biosourcés, formulation, caractérisation), génie des procédés en contexte industriel (raffinage, eau, pharma)
+**Moderate:** QHSE, contrôle qualité industriel
+**Entry-level:** Rôles nécessitant une expérience professionnelle continue de plusieurs années (son parcours est composé de stages de 2 à 7 mois) - normal for a Master's-level candidate, but worth acknowledging rather than overselling
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,9 +95,11 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
+- Within commute range of Rouen, or Normandie/Lille/Île-de-France: PASS
+- Elsewhere in France: PASS (candidate accepts relocation across all of France)
+- Canada, for a doctoral/PhD position only: PASS, but flag visa/permit sponsorship per the Eligibility Gate above
 - Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Requires relocation outside France or Canada without candidate's initiation: FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -107,19 +113,18 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Obtenir une thèse doctorale dans le domaine des matériaux biosourcés / valorisation de la biomasse et modélisation
+- À défaut, une alternance en génie des procédés pour continuer à se professionnaliser
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+- Tasks that energize: conception et optimisation de procédés, expérimentation en laboratoire, caractérisation de matériaux, modélisation, travail sur l'éco-conception et le développement durable
+- Tasks that drain: environnements à forte pression, deadlines très serrées, tâches très répétitives sans marge d'autonomie
+- Non-task factors: autonomie dans l'organisation du travail, rythme soutenable, encadrement bienveillant plutôt que directif
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently on an end-of-studies internship (stage de fin d'études, avril 2026 - présent); actively looking for what comes next (thèse ou alternance). Minimum salary thresholds: **2300€/month for a doctoral/thesis position**, **1200€/month for an alternance**.
+- **Flexibility**: Master's defense ("soutenance") expected September 2026 - full availability from that date; a role starting earlier needs to accommodate her current internship/defense schedule. Holds a French student residence permit with changement de statut available on hire (see Eligibility Gate above).
+- **Professional development**: Aiming to specialize in biosourced materials / biomass valorization (PhD track) while keeping an alternance in general process engineering as a parallel option.
 
 ### 6. Salary Benchmark (Optional)
 

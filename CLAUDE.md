@@ -1,10 +1,10 @@
-# Job Application Assistant for [YOUR_NAME]
+# Job Application Assistant for Rania Boucenna
 
 <!-- SETUP: This file is populated by running /setup -->
 <!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Rania Boucenna, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -16,76 +16,93 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 <!-- This section is auto-populated by /setup. You can also fill it in manually. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Rania Boucenna
+- **Location:** Rouen, France (mobile across all of France; priority regions Normandie, Lille, Île-de-France; also open to PhD opportunities in Canada - see Eligibility Gate notes in `04-job-evaluation.md`)
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | French | Native / Bilingual |
+  | Arabic | Native / Bilingual |
+  | English | C1 (EF SET) / Professional Working |
+  | German | Elementary (Débutante) |
+- **CV language:** French
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Master 2 student, Génie des Procédés Innovants et Développement Durable (Université Sorbonne Paris-Nord / Institut Galilée, Sept 2025 - Sept 2026), currently completing a 6-month end-of-studies internship ("stage de fin d'études") as Ingénieure en développement durable at Laboratoire Eclore, UniLaSalle Rouen (April 2026 - present). Thesis defense ("soutenance") expected September 2026. Algerian national, holds a French student residence permit ("titre de séjour étudiant"), eligible for status change to salarié upon hire.
+- **LinkedIn headline:** "Étudiante en Master 2 Génie des Procédés Innovants & Développement Durable (Institut Galilée) | Ingénieure en Génie des Procédés (ENPC) | R&D, Optimisation"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Master 2, Génie des Procédés Innovants et Développement Durable** (Sept 2025 - Sept 2026, in progress, soutenance prévue septembre 2026) - Université Sorbonne Paris-Nord (Institut Galilée)
+  - Topics: Simulation des procédés, développement durable, QHSE
+- **Diplôme d'Ingénieure, Génie des Procédés** (Déc 2020 - Juil 2023) - École Nationale Polytechnique de Constantine (ENPC), Algérie
+  - Thèse (PFE): "Gélation ionotropique des huiles essentielles pour la conception de bio-patchs de cicatrisation des plaies" - Mention Très Bien
+  - Topics: Encapsulation ionotropique, caractérisation (GCMS, UV-visible, FTIR, granulométrie laser), modélisation cinétique, optimisation de formulation
+- **Classes préparatoires aux grandes écoles** (2018-2020) - École Nationale Polytechnique de Constantine
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Ingénieure en développement durable (stage de fin d'études)** (Avril 2026 - Présent) - **Laboratoire Eclore, UniLaSalle Rouen** (Rouen, France)
+  - Mise au point d'un béton biosourcé destiné à l'isolation thermique
+  - Fabrication de matériaux isolants biosourcés
+  - Caractérisation physico-chimique, mécanique et hygroscopique des matériaux élaborés
+
+- **Ingénieure R&D - Projet de Fin d'Études** (Janv 2023 - Juil 2023) - **École Nationale Polytechnique de Constantine** (Constantine, Algérie)
+  - Recherche sur la gélation ionotropique des huiles essentielles pour la conception de bio-patchs de cicatrisation
+  - Encapsulation ionotropique par pompe à seringue programmable ; caractérisation via GCMS, UV-visible, FTIR, granulométrie laser
+  - Modélisation mathématique de la cinétique de libération et optimisation des paramètres de formulation - Mention Très Bien
+
+- **Ingénieure qualité** (Mars 2023 - Avril 2023) - **Algérienne Des Eaux** (Annaba, Algérie)
+  - Analyse de l'eau selon des méthodes physico-chimiques pour assurer la qualité
+
+- **Stagiaire** (Déc 2022 - Janv 2023) - **Complexe sidérurgique d'El Hadjar** (El Hadjar, Annaba, Algérie)
+  - Familiarisation avec les méthodes de contrôle des métaux et les tests associés
+
+- **Ingénieure process** (Juil 2022 - Août 2022) - **Sonatrach, Raffinerie de Skikda** (Skikda, Algérie)
+  - Acquisition du savoir-faire sur les étapes du raffinage du pétrole brut (dessalage, distillation, traitement des produits finis)
+
+- **Ingénieure laboratoire** (Mars 2022 - Avril 2022) - **Groupe Saidal** (El Harrach, Alger, Algérie)
+  - Contrôle qualité des médicaments
+
+- **Ingénieure production** (Juil 2021 - Août 2021) - **Laboratoires Biogalenic** (Constantine, Algérie)
+  - Contribution à la fabrication de médicaments sous formes sèches (B1, B6, comprimés de paracétamol)
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Génie des procédés, valorisation de la biomasse, matériaux biosourcés, bilans matière et énergie, dimensionnement et optimisation des procédés, caractérisation physico-chimique
+- **Secondary:** Python (traitement et analyse de données), Aspen HYSYS, Matlab, Fluent
+- **Domain:** Développement durable, économie circulaire, QHSE, chimie des réacteurs
+- **Software:** Aspen HYSYS, Python, Matlab, Fluent, ImageJ, Minitab, Pack Office (Excel, PowerPoint, Word), Google Workspace
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Maîtriser les concepts de la durabilité** - LinkedIn Learning
+- **Les fondements de l'économie circulaire** - LinkedIn Learning
+- **Utiliser l'intelligence artificielle pour le développement durable** - LinkedIn Learning
+- **Préparer votre carrière dans les technologies durables** - Microsoft & LinkedIn
+- **Acquérir des compétences vertes au service de la transition écologique** - LinkedIn Learning
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None yet
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Mention Très Bien - Projet de Fin d'Études, École Nationale Polytechnique de Constantine (2023)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Autonome et méthodique** - travaille bien seule, avec un sens de l'organisation dans la conduite de projets techniques (recherche bibliographique, plans d'expérience, caractérisation systématique)
+- **Préfère un rythme de travail personnel, sans pression excessive** - performe mieux dans des environnements qui laissent de l'autonomie sur l'organisation du temps plutôt que dans des cultures à deadlines très serrées
+- **Strengths:** Résolution de problèmes techniques complexes, curiosité technique, forte capacité d'adaptation (expérience dans des secteurs très variés : eau, sidérurgie, pétrochimie, pharma, matériaux biosourcés), communication technique (rédaction de rapports)
+- **Growth areas:** Expérience de gestion de projet à plus grande échelle encore limitée (parcours composé de stages courts) - en développement via le Master 2 et les prochaines expériences
+- **Thrives in:** Environnements de R&D/laboratoire autonomes, orientés résolution de problèmes et innovation écoresponsable, avec un rythme de travail soutenable
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Concevoir des procédés de production innovants et écoresponsables, en particulier autour de la valorisation de la biomasse et des matériaux biosourcés
+- Résoudre des problèmes techniques complexes en tenant compte des enjeux technico-économiques
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Matériaux biosourcés / valorisation de la biomasse (R&D, thèse) : UniLaSalle, INRAE, IFPEN, instituts de recherche, entreprises de matériaux de construction biosourcés
+- Génie des procédés / industrie chimique, pétrochimique, pharmaceutique (alternance) : industriels du process en France, secteurs eau/chimie/pharma
 
 ### Deal-breakers
 <!-- Hard constraints on job search. Language requirements are handled separately and
 automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Aucun deal-breaker fixe identifié à ce stade - dépend fortement du poste
+- Forte préférence pour des environnements à rythme de travail autonome et sans pression excessive (voir Behavioral Profile)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
